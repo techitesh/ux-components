@@ -3,7 +3,7 @@
   "scripts": {
     "start": "webpack-dev-server",
     "start:standalone": "webpack-dev-server --env.standalone",
-    "build": "webpack --mode=production",
+    "build": "npm config set \"@fortawesome:registry\" https://npm.fontawesome.com/ && npm config set \"//npm.fontawesome.com/:_authToken\" 820A812E-C4FC-4313-848E-CC4965165F1E\n && webpack --mode=production",
     "analyze": "webpack --mode=production --env.analyze=true",
     "lint": "eslint src --ext js,ts,tsx",
     "format": "prettier --write \"./**\"",
