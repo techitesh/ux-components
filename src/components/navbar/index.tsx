@@ -115,7 +115,8 @@ const UxNavbar = (props: NavbarProps) => {
                 src={Logo}
                 width="40"
                 height="40"
-                class="edge-ux-icon d-inline-block bg-light rounded-circle p-2 mb-3 mx-2"
+                alt={""}
+                className="edge-ux-icon d-inline-block bg-light rounded-circle p-2 mb-3 mx-2"
               />
               {slogan && (
                 <>

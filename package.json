@@ -3,13 +3,15 @@
   "scripts": {
     "start": "webpack-dev-server",
     "start:standalone": "webpack-dev-server --env.standalone",
-    "build": "npm config set \"@fortawesome:registry\" https://npm.fontawesome.com/ && npm config set \"//npm.fontawesome.com/:_authToken\" 820A812E-C4FC-4313-848E-CC4965165F1E\n && webpack --mode=production",
+    "font-init": "npm config set \"@fortawesome:registry\" https://npm.fontawesome.com/ && npm config set \"//npm.fontawesome.com/:_authToken\" 820A812E-C4FC-4313-848E-CC4965165F1E\n",
+    "prod": "webpack --mode=production",
     "analyze": "webpack --mode=production --env.analyze=true",
     "lint": "eslint src --ext js,ts,tsx",
     "format": "prettier --write \"./**\"",
     "test": "cross-env BABEL_ENV=test jest",
     "watch-tests": "cross-env BABEL_ENV=test jest --watch",
-    "coverage": "cross-env BABEL_ENV=test jest --coverage"
+    "coverage": "cross-env BABEL_ENV=test jest --coverage",
+    "build": "yarn font-init & yarn prod"
   },
   "husky": {
     "hooks": {
@@ -28,7 +30,7 @@
     "@types/systemjs": "^6.1.0",
     "babel-eslint": "^11.0.0-beta.2",
     "babel-jest": "^24.9.0",
-    "concurrently": "^5.0.1",
+    "concurrently": "^5.3.0",
     "cross-env": "^7.0.2",
     "css-loader": "^5.0.1",
     "eslint": "^6.7.2",
