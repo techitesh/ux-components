@@ -1,0 +1,211 @@
+.filterSliderBackground {
+  position: absolute;
+  top: 0;
+  left: 90px;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+  z-index: 1029;
+  transition: 1s;
+}
+.filterSliderOpaque{
+position: absolute;
+top: 0;
+left: 90px;
+width: 100%;
+height: 100%;
+background-color: rgba(0, 0, 0, 0);
+z-index: 1029;
+transition: 1s;
+}
+
+.filterSlider {
+position: absolute;
+top: 0;
+left: 90px;
+height: 100%;
+background-color: #f2f2f2;
+z-index: 1029;
+box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+padding: 20px;
+transition: 0.8s;
+overflow-y: auto;
+min-width: 230px !important;
+fill: #f5f4f2;
+box-shadow: 3px 1px 2px rgba(0,0,0,0.2);
+max-width: auto;
+}
+
+.fliterTextCloseFLex {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.filterSliderText {
+width: 44px;
+height: 19px;
+  font-family: 'Roboto' !important;
+font-size: 16px;
+color: #6e7075;
+text-decoration: none solid rgb(110, 112, 117);
+}
+
+.filterCloseIcon {
+  cursor: pointer;
+  margin-top: 5px;
+  color: #343A40;
+}
+
+.activeFilterDiv {
+  margin-top: -10px;
+}
+
+.activeFilterDivText {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+    font-family: 'Roboto' !important;
+  font-size: 16px;
+  color: #6e7075;
+  text-decoration: none solid rgb(110, 112, 117);
+  font-weight: 500;
+}
+
+.activeFilters {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 35px;
+  padding: 0px 0px 0px 15px;
+  border: 1px solid #e0e0e0 !important;
+  border-radius: 100px;
+  background-color: #ffffff;
+  background-size: cover;
+    font-family: 'Roboto' !important;
+  font-size: 14px !important;
+  color: #6e7075;
+  text-decoration: none solid rgb(110, 112, 117);
+  font-family: 500 !important;
+  margin-bottom: 5px;
+  width: 200px;
+}
+
+.allActiveFilterText {
+  font-size: 14px !important;
+  color: #6e7075 !important;
+  text-decoration: none solid rgb(110, 112, 117);
+  font-weight: 500 !important;
+  margin-top: 6px !important;
+  margin-right: 20px;
+}
+
+.typeLabel {
+  cursor: pointer;
+  margin-left: 10px !important;
+}
+
+.inputTypeFlex {
+  display: flex;
+  flex-direction: row;
+}
+
+.activeCancelIcon {
+  cursor: pointer;
+}
+
+.anime {
+  transition: 1s !important;
+}
+
+.fa-square {
+  font-size: 22px !important;
+  color: rgba(0, 0, 0, 0.54);
+  cursor: pointer;
+}
+
+.fa-check-square {
+  font-size: 22px !important;
+  color: #343a40;
+  cursor: pointer;
+}
+
+.Count {
+  width: 22px;
+  height: 22px;
+  border-radius: 70px;
+  background-color: rgba(110, 112, 117, 0.15);
+  background-size: cover;
+  font-family: 'Roboto' !important;
+  font-size: 14px;
+  color: #363636;
+  text-decoration: none solid rgb(54, 54, 54);
+  text-align: center;
+  font-weight: 500 !important;
+  margin-left: 5px;
+}
+
+.resetHolder {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 140px;
+  height: 37px;
+  padding: 0px 0px 0px 20px;
+  border: 1px solid rgba(140, 140, 140, 0.2) !important;
+  border-radius: 4px;
+  background-color: #f5f4f2;
+  background-size: cover;
+  text-decoration: none solid rgb(46, 49, 146);
+  text-align: center;
+  margin: 0px 0 20px 0;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.resetText {
+  padding: 10px 0 0 10px;
+  font-family: Roboto;
+  font-size: 14px;
+  color: #2e3192 !important;
+}
+
+.fliterTextCloseFLex {
+  margin: 0px 0 5px 0;
+}
+
+.activeFilterDiv {
+  margin: 10px 0 20px 0 !important;
+}
+
+.activeFilterDivText {
+    font-family: 'Roboto' !important;
+  font-size: 16px;
+  color: #6e7075;
+  text-decoration: none solid rgb(110, 112, 117);
+  font-weight: 500;
+  margin: 10px 0 5px 0 !important;
+}
+
+.typeLabel {
+    font-family: 'Roboto' !important;
+  font-size: 15px;
+  color: #6e7075;
+  text-decoration: none solid rgb(110, 112, 117);
+}
+
+.cursorImg {
+  cursor: pointer;
+}
+
+.filterRemove {
+  margin-top: 8px !important;
+  margin-right: 10px;
+}
+
+.resetHolder:hover {
+  background-color: #FFFFFF;
+  border: 1px solid rgba(46, 49, 146, 0.3) !important;
+  transition: 0.3s;
+}

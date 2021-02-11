@@ -1,0 +1,42 @@
+/* _text.scss */
+
+@use "sass:map";
+
+/* Get text sizes map */
+@function text-size($key: "default") {
+  @return map-get($text-sizes, $key);
+}
+
+/* Create size classes from map */
+@each $key, $text-size in $text-sizes {
+  .text-#{$key} {
+    font-size: text-size($key);
+  }
+}
+
+/* Create gray classes from map */
+.text-gray,
+.text-grey {
+  color: $gray-500;
+}
+
+.text-super {
+  vertical-align: super;
+}
+
+/* truncation */
+/* For single line truncation use bootstraps truncate-line class */
+.truncate-lines {
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+
+  &.lines-2 {
+    -webkit-line-clamp: 2;
+  }
+
+  &.lines-3 {
+    -webkit-line-clamp: 3;
+  }
+}

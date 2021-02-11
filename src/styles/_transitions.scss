@@ -1,0 +1,25 @@
+/* _transitions.scss */
+
+// speeds map getter
+@function speed($key: "default") {
+  @return map-get($speeds, $key);
+}
+
+// transition getter
+@function transition($keys, $speed: "default", $ease: ease-in-out) {
+  $transitions: null;
+  @each $key in $keys {
+    $transitions: $transitions, $key speed($speed) $ease;
+  }
+  @return $transitions;
+}
+
+// pulse
+@keyframes pulse {
+  0% {
+    opacity: 0.25;
+  }
+  50% {
+    opacity: 0.1;
+  }
+}

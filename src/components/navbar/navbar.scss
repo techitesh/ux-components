@@ -1,0 +1,21 @@
+.navbar-brand text {
+  color: var(--primary);
+  font-size: xx-small;
+}
+
+.edge-ux-navbar {
+  width: 90px !important;
+
+  &.sidebar {
+    right: inherit;
+    bottom: 0;
+  }
+}
+
+.edge-ux-slogan {
+  font-size: 1rem;
+}
+
+.sidebar {
+  background-color: #324465 !important;
+}

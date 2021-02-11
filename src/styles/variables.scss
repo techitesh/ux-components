@@ -1,0 +1,91 @@
+/* variables.scss */
+@use "sass:map";
+
+// sizes
+$size-map: (
+  "xs": 5rem,
+  "sm": 12rem,
+  "md": 15rem,
+  "lg": 20rem,
+  "xl": 25rem
+);
+
+$text-sizes: (
+  "xxs": 0.5rem,
+  "xs": 0.8rem,
+  "sm": 0.9rem,
+  "md": 1rem,
+  "lg": 1.2rem,
+  "xl": 1.5rem,
+  "xxl": 1.8rem
+);
+
+// speeds
+$speeds: (
+  "slowest": 0.75s,
+  "slow": 0.5s,
+  "default": 0.3s,
+  "fast": 0.25s,
+  "fastest": 0.2s
+);
+
+// backgrounds
+$background-positions: (
+  left-top: left top,
+  left-center: left center,
+  left-bottom: left bottom,
+  right-top: right top,
+  right-center: right center,
+  right-bottom: right bottom,
+  top: center top,
+  center-top: center top,
+  center: center,
+  center-center: center center,
+  center-bottom: center bottom,
+  bottom: center bottom
+);
+
+// color map
+$colors: (
+  blue: var(--blue),
+  indigo: var(--indigo),
+  purple: var(--purple),
+  pink: var(--pink),
+  red: var(--red),
+  orange: var(--orange),
+  yellow: var(--yellow),
+  green: var(--green),
+  teal: var(--teal),
+  cyan: var(--cyan)
+);
+
+// theme
+$themed-colors: (
+  primary: var(--primary),
+  secondary: var(--secondary),
+  success: var(--success),
+  info: var(--info),
+  warning: var(--warning),
+  danger: var(--danger)
+);
+
+$shades: (
+  white: var(--white),
+  light: var(--light),
+  gray-light: var(--gray-light),
+  gray: var(--gray),
+  gray-dark: var(--gray-dark),
+  dark: var(--dark),
+  black: var(--black)
+);
+
+$palette: (map-merge($themed-colors, $shades));
+
+:root {
+  --gray-light: #dee2e6;
+  --black: #000000;
+}
+
+$gray: var(--gray);
+$gray-light: #dee2e6 !default;
+$gray-dark: var(--gray-dark);

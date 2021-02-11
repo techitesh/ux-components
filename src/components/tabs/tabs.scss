@@ -1,0 +1,24 @@
+.edge-ux-tabs.nav-tabs {
+  border-color: var(--gray-light);
+  margin: 0 20px 0 20px;
+  height: 48px;
+  font-family: Roboto, sans-serif;
+  font-weight: 500;
+  color: #454545;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+
+  .nav-item {
+    background-color: transparent;
+    color: var(--dark);
+    border-width: 0 0 1px 0;
+    font-weight: bold;
+    font-size: 0.8em;
+    border-radius: 0;
+
+    &.active {
+      background-color: transparent;
+      color: #2E3192;
+      border-bottom: 2px solid #32C5FF;
+    }
+  }
+}

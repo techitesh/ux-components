@@ -1,0 +1,11 @@
+/* _shapes.scss */
+
+.shape.boxed {
+  border-radius: 0;
+}
+
+.after-border-radius-circle {
+  &:after {
+    border-radius: 50%;
+  }
+}

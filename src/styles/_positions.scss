@@ -1,0 +1,46 @@
+/* _positions.scss */
+
+.position-contain {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.top-0 {
+  top: 0;
+}
+
+.bottom-0 {
+  bottom: 0;
+}
+
+.left-0 {
+  left: 0;
+}
+
+.right-0 {
+  right: 0;
+}
+
+// z-index
+.z-index {
+  &-1 {
+    z-index: 1;
+  }
+
+  &--1 {
+    z-index: -1;
+  }
+
+  &-2 {
+    z-index: 2;
+  }
+}
+
+/* x-axis negative margin */
+.mx--3 {
+  margin-left: -1em;
+  margin-right: -1em;
+}

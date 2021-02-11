@@ -1,0 +1,27 @@
+/* _backgrounds.scss */
+
+.background {
+  @each $key, $position in $background-positions {
+    &-#{$key} {
+      background-position: $position;
+    }
+  }
+
+  &-cover {
+    background-size: cover;
+  }
+}
+
+.bg {
+  &-gray {
+    background-color: $gray;
+
+    &-light {
+      background-color: $gray-light;
+    }
+
+    &-dark {
+      background-color: $gray-dark;
+    }
+  }
+}

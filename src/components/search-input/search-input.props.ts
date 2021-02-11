@@ -1,0 +1,22 @@
+export default interface SearchInputProps {
+  inputClassName: string,
+  searchButtonClassName: string,
+  clearButtonClassName: string,
+  flexClassName: string,
+  inputID?: string,
+  buttonID?: string,
+  name?: string,
+  placeHolder: string,
+  value?: any,
+  minLength?: number,
+  maxLength?: number,
+  required?: boolean,
+  readOnly?: boolean,
+  clearButtonContent: any,
+  searchButtonContent: any,
+  onChange(event: any): any,
+  onSearchClick(event: any): any,
+  onClearClick(event: any): any,
+  onKeyPress(event: any): any,
+  restoreCheckBoxState?: () => void;
+}

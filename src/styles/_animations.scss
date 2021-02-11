@@ -1,0 +1,107 @@
+/* _animations.scss */
+
+.animation {
+  &:after {
+    content: " ";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+  }
+
+  // darken
+  &.darken {
+    &:after {
+      top: 0;
+      left: 0;
+      background-color: var(--black);
+      transition: transition(opacity);
+      opacity: 0;
+    }
+
+    &:hover:after,
+    &:focus:after {
+      opacity: 0.2;
+    }
+  }
+
+  // appear
+  &.appear {
+    transition: transition(opacity);
+    opacity: 1;
+
+    &.closed {
+      opacity: 0;
+    }
+  }
+
+  // appear hover
+  &.appear-hover {
+    opacity: 0;
+    transition: transition(opacity);
+
+    &:hover {
+      opacity: 1;
+    }
+  }
+
+  // shadow hover
+  &.shadow-hover {
+    box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.2);
+
+    &:after {
+      opacity: 0;
+      transition: opacity speed() ease-in-out;
+      box-shadow: 0 5px 3px rgba(0, 0, 0, 0.1);
+      top: 0;
+      left: 0;
+    }
+
+    // not disabled
+    &:not(.disabled):hover:after {
+      opacity: 1;
+    }
+  }
+
+  // pulse
+  &.pulse:after {
+    opacity: 0.25;
+    animation: pulse speed("slowest") ease-in-out infinite;
+  }
+
+  // spinner (not used: bootstrap's used in favor)
+  &.spinner {
+    animation: spinner-border speed("slowest") linear infinite;
+  }
+
+  // bootstrap width collapse fix
+  &.collapsing.width {
+    width: 0;
+    height: auto;
+  }
+
+  // width animation (width must be defined)
+  // suggest using size classes for widths, for instance "width size sm"
+  &.width {
+    transition: transition(width);
+
+    &.closed {
+      width: 0;
+    }
+
+    &.appear {
+      transition: transition(width opacity);
+    }
+  }
+}
+
+// conform to shape fix
+// since overflow hidden cant be combined with shadows
+.rounded {
+  &:after {
+    border-radius: 0.25em;
+  }
+
+  &-circle:after {
+    border-radius: 50%;
+  }
+}

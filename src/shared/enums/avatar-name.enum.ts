@@ -1,0 +1,11 @@
+enum AvatarNameEnum {
+  GOLD_ONE_EYED_MONSTER = "Joe",
+  BLUE_ONE_EYED_MONSTER = "Rocky",
+  LIME_THREE_EYED_MONSTER = "Happy",
+  MAGENTA_TWO_EYED_MONSTER = "Daisy",
+  PURPLE_THREE_EYED_MONSTER = "Mel",
+  TURQUOISE_THREE_EYED_MONSTER = "June",
+  GREEN_THREE_EYED_MONSTER = "Sid",
+  VIOLET_TWO_EYED_MONSTER = "Rose"
+}
+export default AvatarNameEnum;

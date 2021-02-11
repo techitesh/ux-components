@@ -1,0 +1,11 @@
+/* _svgs.scss */
+
+.stroke {
+  stroke: var(--primary);
+
+  @each $key, $color in $palette {
+    &.stroke-#{$key} {
+      stroke: $color;
+    }
+  }
+}

@@ -1,0 +1,10 @@
+/* _borders.scss */
+
+.border {
+  &-gray {
+    border-color: $gray;
+  }
+  &-gray-light {
+    border-color: $gray-light;
+  }
+}

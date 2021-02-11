@@ -1,0 +1,231 @@
+#basic-nav-dropdown {
+    color: #343A40 !important;
+}
+
+.dropdown-toggle {
+    width: 10px !important; 
+}
+
+.dropdown-toggle:after {
+    display: none !important;
+}
+
+.status {
+    width: 100% !important;
+    margin-top: 8px !important;
+}
+
+.fa-ellipsis-v {
+    font-size: 25px !important;
+}
+
+.noCursor {
+    cursor: auto;
+}
+
+.rowFLex {
+  display: flex;
+  align-items: flex-start !important;
+}
+
+.textBold {
+  background-size: cover !important;
+  font-family: 'Roboto' !important;
+  font-size: 12px !important;
+  color: #3d4450 !important;
+  text-decoration: none solid rgb(26, 28, 94) !important;
+  text-transform: uppercase !important;
+}
+
+.rowText {
+  font-size: 16px !important;
+  color: #333 !important;
+}
+
+.MuiCheckbox-colorSecondary.Mui-checked {
+color: #343A40 !important;
+}
+
+.tableHeadd {
+  margin-top: -25px !important;
+}
+
+.ellipsis {
+  max-width: auto !important;
+  min-width: 50px !important;
+  overflow: hidden !important;
+  text-overflow: ellipsis !important;
+  white-space: nowrap !important;
+}
+
+.ellipsis:hover {
+  max-width: auto !important;
+  min-width: auto !important;
+  overflow: visible !important;
+  white-space: none !important;
+  flex-wrap: wrap !important;
+  white-space: normal !important;
+  width: 100% !important; 
+  overflow: visible !important;
+  background-color: "#ffffff";
+  cursor: pointer !important;
+  word-break: break-all;
+}
+
+.noCursor:hover {
+  cursor: auto !important;
+}
+
+.MuiTableCell-root {
+  max-width: 250px !important; min-width: 20px !important; overflow: hidden !important; text-overflow: ellipsis !important; white-space: nowrap !important; cursor: auto !important;
+}
+
+.MuiTableCell-root:hover {
+  max-width: auto !important; min-width: auto !important; overflow: visible !important;  white-space: none !important; cursor: auto !important;
+}
+
+.rowTextNoEllipsis {
+  max-width: 95% !important;
+  min-width: 80% !important;
+  overflow: hidden !important;
+  text-overflow: ellipsis !important;
+  white-space: nowrap !important;
+  cursor: auto !important;
+} 
+.rowTextNoEllipsis:hover {
+  max-width: 95% !important;
+  min-width: 80% !important;
+  overflow: visible !important;
+  white-space: normal !important;
+  overflow: visible !important;
+  background-color: "#ffffff";
+  cursor: auto !important;
+}
+
+.navDropItem {
+  height: 34px;
+}
+
+.blackEllipsis {
+  color: #000 !important;
+  }
+  
+.noUnderLine:before, .noUnderLine:after, .MuiSelect-select.MuiSelect-select {
+  background-color: #ffffff00 !important;
+  border-bottom: none !important;
+}
+
+.MuiPaper-root.MuiMenu-paper.MuiPopover-paper.MuiPaper-elevation8.MuiPaper-rounded{
+  box-shadow: 0px 0px rgba(0, 0, 0, 0) !important;
+  border: 1px solid #e0e0e0;
+  width: 150px;
+}
+
+.MuiSelect-icon {
+  width: 32px;
+  height: 32px;
+  border-radius: 70px;
+  transition: 0.4s !important;
+}
+
+.textBold {
+  font-weight: bold !important;
+}
+
+.rowText {
+  background-size: cover !important;
+      font-family: 'Roboto' !important;
+  font-size: 16px !important;
+  color: #333 !important;
+  text-decoration: none solid rgb(110, 112, 117) !important;
+}
+
+.tBlueHover:hover {
+  color: #2c7a98 !important;
+  font-weight: bold !important;
+}
+
+.MuiTableRow-root {
+  height: 4px !important;
+}
+
+.MuiTableCell-body, .MuiTableCell-head  {
+  padding: 1px 16px 1px 16px !important;
+}
+
+.MuiTableRow-root:hover {
+  background: #F4FAFC;
+}
+
+.MuiPopover-paper{
+  min-height: 30px;
+  margin-top: -1px !important;
+  margin-left: -80px !important;
+}
+
+.MuiMenu-list {
+  padding: 3px 0px 3px 0px !important;
+}
+
+.MuiTableRow-head:hover {
+  background: #ffffff00;
+}
+
+.warningImg {
+  width: 18px;
+  height: 18px;
+  padding: 0;
+  margin: -4px 3px 0 0;
+  cursor: pointer;
+}
+
+.imageRow {
+  width: 20px;
+}
+
+
+//ALA-1197  task changes
+.sortIconUp {
+  width: 7px;
+  padding: 0;
+  margin: 8px 0 0 14px;
+  cursor: pointer;
+  //transition: 0.4s;
+  font-size: 14px;
+  color: #8781bd;
+}
+//ALA-1197  task changes
+.sortIconDown {
+  width: 7px;
+  padding: 0;
+  margin: -4px 0 0 14px;
+  cursor: pointer;
+  //transition: 0.4s;
+  font-size: 14px;
+  color: #8781bd;
+}
+
+
+//ALA-1197  task changes
+
+.sortIconDefault {
+  //transition: 0.6s;
+  cursor: pointer;
+  width: 7px;
+  padding: 0;
+  margin: 0px 0 0 14px;
+  font-size: 14px;
+  color: #8781bd;
+}
+//ALA-1197  task changes
+.MuiTableCell-stickyHeader {
+  background-color: #ffffff !important;
+}
+//ALA-1197  task changes
+.MiuFormControlLabel-label {
+  color: #6e7075 !important;
+}
+
+.MuiPaper-elevation1 {
+  box-shadow: none !important;
+}

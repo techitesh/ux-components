@@ -1,0 +1,32 @@
+/* _sizes.scss */
+
+.size {
+  $count: 2;
+
+  @each $key, $size in $size-map {
+    &.#{$key} {
+      width: $size;
+
+      &.rounded-circle,
+      &.squared {
+        height: $size;
+      }
+
+      .truncate-lines {
+        -webkit-line-clamp: $count;
+      }
+    }
+
+    $count: $count + 1;
+  }
+}
+
+/* aspect ratio */
+.aspect-1-1 {
+  padding-top: 100%;
+
+  & > *:first-child,
+  &:after {
+    @extend .position-contain;
+  }
+}
